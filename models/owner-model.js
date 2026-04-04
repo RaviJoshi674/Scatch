@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 
 
-const userSchema = mongoose.Schema({
+const ownerSchema = mongoose.Schema({
     fullname : {
         type : String,
         minLenght : 3,
@@ -20,4 +20,4 @@ const userSchema = mongoose.Schema({
     gstin : String
 })
 
-module.exports = mongoose.model("owner","ownerSchema");
+module.exports = mongoose.model("owner",ownerSchema);
